@@ -30,9 +30,24 @@ module Petlog
     # in config/environments, which are processed later.
     #
     # config.time_zone = "Central Time (US & Canada)"
+    config.time_zone = "Asia/Tokyo"
+    config.active_record.default_timezone = :local
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
+    config.generators do |g|
+      g.assets false
+      g.helper false
+      g.skip_routes true
+      g.template_engine nil
+      g.test_framework :rspec,
+      view_specs: false,
+      helper_specs: false,
+      routing_specs: false,
+      controller_specs: false,
+      request_specs: false
+    end
+    
     config.generators.system_tests = nil
   end
 end
