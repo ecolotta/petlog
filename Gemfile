@@ -25,10 +25,25 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+#変数管理
+gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  #デバッグ用
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry'
+  gem 'factory_bot_rails'
+  #テスト用
+  gem 'faker'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails.git', tag: 'v4.0.0.beta3'
+  gem 'rspec_junit_formatter'
+  #コードチェック用
+  gem 'rubocop-rails'
+  gem 'rubocop-checkstyle_formatter'
 end
 
 group :development do
