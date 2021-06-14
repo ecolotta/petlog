@@ -49,5 +49,7 @@ module Petlog
     end
     
     config.generators.system_tests = nil
+
+    config.hosts << "b0539a756602.ngrok.io"
   end
 end
