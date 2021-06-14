@@ -29,6 +29,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'dotenv-rails'
 #認証
 gem 'sorcery' #externalオプションも併用
+#環境ごとの定数を使う
+gem 'config'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
