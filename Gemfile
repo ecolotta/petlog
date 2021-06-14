@@ -18,7 +18,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 #変数管理
 gem 'dotenv-rails'
+#認証
+gem 'sorcery' #externalオプションも併用
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,7 +41,7 @@ group :development, :test do
   #テスト用
   gem 'faker'
   gem 'factory_bot_rails'
-  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails.git', tag: 'v4.0.0.beta3'
+  gem 'rspec-rails', '~> 4.0.2'
   gem 'rspec_junit_formatter'
   #コードチェック用
   gem 'rubocop-rails'
