@@ -1,5 +1,6 @@
 module Api
-  class OauthsController < ApplicationController
+  class OauthsController < Api::ApplicationController
+    skip_before_action :require_login
     def oauth
       login_at(auth_params[:provider])
     end
