@@ -9,6 +9,7 @@ import Vue from 'vue'
 import App from '../app.vue'
 import router from '../router/index'
 import axios from '../plugins/axios.js'
+import store from '../store/index.js'
 
 Vue.prototype.$axios = axios
 
@@ -17,6 +18,7 @@ Vue.config.productionTip = false
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     router,
+    store,
     render: h => h(App)
   }).$mount()
   document.body.appendChild(app.$el)
