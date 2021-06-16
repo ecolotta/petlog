@@ -8,6 +8,9 @@
 import Vue from 'vue'
 import App from '../app.vue'
 import router from '../router/index'
+import axios from '../plugins/axios.js'
+
+Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
 
