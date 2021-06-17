@@ -7,7 +7,9 @@ const mutations = {
   
 };
 const actions = {
-  
+  fetchUser() {
+    axios.get('me').then(res => console.log(res))
+  }
 };
 
 const getters = {
