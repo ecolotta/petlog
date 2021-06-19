@@ -16,7 +16,7 @@ export default {
   methods: {
     ...mapActions("usersModule",["fetchUser", "fetchDog"]),
     handleFetchUser() {
-      this.fetchUser()
+      this.fetchUser().then(res => console.log(res))
     },
     async handleFetchUsersDog() {
       await this.fetchDog().then(res => console.log(res))
