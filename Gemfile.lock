@@ -141,8 +141,6 @@ GEM
     faraday-excon (1.1.0)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.1.0)
-    fast_jsonapi (1.5)
-      activesupport (>= 4.2)
     ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -323,7 +321,6 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   faker
-  fast_jsonapi
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mysql2 (~> 0.5)

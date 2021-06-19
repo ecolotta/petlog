@@ -31,8 +31,6 @@ gem 'dotenv-rails'
 gem 'sorcery' #externalオプションも併用
 #環境ごとの定数を使う
 gem 'config'
-#selializer
-gem 'fast_jsonapi'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
