@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     end
     get "me", to: "users#me"
     get "my_dog", to: "dogs#me"
+    post 'webhook' => "linebot#webhook"
     post "oauth/callback", to: "oauths#callback"
     get "oauth/callback", to: "oauths#callback"
     get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider

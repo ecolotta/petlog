@@ -31,6 +31,8 @@ gem 'dotenv-rails'
 gem 'sorcery' #externalオプションも併用
 #環境ごとの定数を使う
 gem 'config'
+#LINEbot用
+gem 'line-bot-api'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
