@@ -33,6 +33,8 @@ gem 'sorcery' #externalオプションも併用
 gem 'config'
 #LINEbot用
 gem 'line-bot-api'
+#リマインド通知用
+gem 'whenever'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
